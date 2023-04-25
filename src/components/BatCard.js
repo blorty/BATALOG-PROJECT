@@ -1,17 +1,22 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function BatCard({ movie }) {
-
-    //set state for movies seen
+  // Set state for movies seen and show details
     const [moviesSeen, setMoviesSeen] = useState(false);
+    const [showDetails, setShowDetails] = useState(false);
 
-    //toggle movies seen status
+    // Toggle movies seen status
     const handleMoviesSeen = () => {
         setMoviesSeen(!moviesSeen);
     };
 
+    // Toggle show details status
+    const handleMovieClick = () => {
+        setShowDetails(!showDetails);
+    };
+
     return (
-        <div className="w-full md:w-1/3 px-2 mb-4">
+        <div className="w-full md:w-1/3 px-2 mb-4" onClick={handleMovieClick}>
         <div className="flex justify-center">
             <div className="container-card w-full p-4">
             <img
@@ -25,14 +30,25 @@ function BatCard({ movie }) {
                 {movie.title.toUpperCase()}
                 </span>
             </h3>
-            <p className="text-white" >{movie.description}</p>
+            <p className="text-white">{movie.description}</p>
+            {showDetails && (
+                <div>
+                <p className="text-white">Star: {movie.star}</p>
+                <p className="text-white">Rating: {movie.rating}</p>
+                <p className="text-white">Year: {movie.year}</p>
+                <p className="text-white">Director: {movie.director}</p>
+                </div>
+            )}
             </div>
         </div>
-            <button onClick={handleMoviesSeen} className="bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer hover:bg-blue-700 ml-2">
-                {moviesSeen ? "Seen" : "Not Seen"}
-            </button>
+        <button
+            onClick={handleMoviesSeen}
+            className="bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer hover:bg-blue-700 ml-2"
+        >
+            {moviesSeen ? "Seen" : "Not Seen"}
+        </button>
         </div>
     );
-    }
+}
 
 export default BatCard;
