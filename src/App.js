@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import MoviesContainer from "./components/MoviesContainer";
-import Form from "./components/Form";
+import BatContainer from "./components/BatContainer";
+import BatForm from "./components/BatForm";
 import Search from "./components/Search";
 import './App.css';
 
@@ -14,17 +14,24 @@ function App() {
     .then((r) => r.json())
     .then((moviesData) => {
       setMovies(moviesData);
-      console.log(moviesData);
     });
   }, []);
 
   return (
-    <div className="App">
+    <div 
+      className="App min-h-screen animate-moveGradient"
+      style={{ minHeight: "100vh" }}
+    >
       <header className="App-header">
-        <h1 class="color text-yellow-500">BATBOOK</h1>
-        <MoviesContainer class="color fill-black"/>
-        <Form />
-        <Search />
+        <h1 class="text-yellow-500 pt-3.5 pb-3.5 text-9xl"
+            style={{
+            textShadow:'-1px -1px 0 #1f2937, 1px -1px 0 #1f2937, -1px 1px 0 #1f2937, 1px 1px 0 #1f2937',
+          }}
+        >THE BATALOG
+        </h1>
+          <Search />
+          <BatForm />
+          <BatContainer movies={movies}/>
       </header>
     </div>
   );
