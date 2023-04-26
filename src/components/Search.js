@@ -31,7 +31,7 @@ function Search({ input, setInput, searchBy, setSearchBy }) {
       <select value={searchBy} onChange={handleSelectChange}>
         <option value="title">Title</option>
         <option value="director">Director</option>
-        <option value="actors">Actor</option>
+        <option value="star">Star</option>
       </select>
     </div>
   );
