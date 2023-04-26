@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import BatReview from "./BatReview";
 
 function BatCard({ movie }) {
   // Set state for movies seen and show details
   const [moviesSeen, setMoviesSeen] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
+  const [showReview, setShowReview] = useState(false);
 
   // Toggle movies seen status
   const handleMoviesSeen = () => {
@@ -13,6 +15,16 @@ function BatCard({ movie }) {
   // Toggle show details status
   const handleMovieClick = () => {
     setShowDetails(!showDetails);
+  };
+
+  // Toggle show review form status
+  const handleReviewClick = () => {
+    setShowReview(!showReview);
+  };
+
+  const handleSubmit = (reviewData) => {
+    console.log(reviewData); // or send the review data to the backend API
+    setShowReview(false); // hide the review form after submission
   };
 
   return (
@@ -40,6 +52,7 @@ function BatCard({ movie }) {
               <p className="text-white">Director: {movie.director}</p>
             </div>
           )}
+          {showReview && <BatReview movieId={movie.id} onSubmit={handleSubmit} />}
         </div>
       </div>
       <button
@@ -47,6 +60,12 @@ function BatCard({ movie }) {
         className="bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer hover:bg-blue-700 ml-2"
       >
         {moviesSeen ? "Seen" : "Not Seen"}
+      </button>
+      <button
+        onClick={handleReviewClick}
+        className="bg-blue-600 text-white py-2 px-4 rounded-md cursor-pointer hover:bg-blue-700 ml-2"
+      >
+        Leave Review
       </button>
     </div>
   );

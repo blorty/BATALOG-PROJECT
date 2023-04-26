@@ -1,127 +1,125 @@
 {
   "movies": [
-      {
-          "id": "1",
-          "type": "Film",
-          "title": "Batman: The Movie",
-          "director": "Leslie H. Martinson",
-          "year": "1966",
-          "rating":"",
-          "actors": "Burt Ward",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMmM1OGIzM2UtNThhZS00ZGNlLWI4NzEtZjlhOTNhNmYxZGQ0XkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_.jpg"
-      },
-      {
-          "id": "2",
-          "type": "Film",
-          "title": "Batman",
-          "director": "Tim Burton",
-          "year": "1989",
-          "rating":"pg-13",
-          "actors": "Michael Keaton",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BZjEzYzFkMDgtNzI5ZS00ZDg0LTkwZjgtNGJhODI1MWM1MzZjXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg"
-      },
-      {
-          "id": "3",
-          "type": "Film",
-          "title": "Batman Returns",
-          "director": "Tim Burton",
-          "year": "1992",
-          "rating":"",
-          "actors": "Michael Keaton",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "4",
-          "type": "Film",
-          "title": "Batman Forever",
-          "director": "Joel Schumacher",
-          "year": "1995",
-          "rating":"",
-          "actors": "Val Kilmer",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "5",
-          "type": "Film",
-          "title": "Batman and Robin",
-          "director": "Joel Schumacher",
-          "year": "1997",
-          "rating":"",
-          "actors": "George Clooney",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "6",
-          "type": "Film",
-          "title": "Batman Begins",
-          "director": "Christopher Nolan",
-          "year": "2005",
-          "rating":"",
-          "actors": "Christian Bale",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "7",
-          "type": "Film",
-          "title": "The Dark Knight",
-          "director": "Christopher Nolan",
-          "year": "2008",
-          "rating":"",
-          "actors": "Christian Bale",
-          "reviews": "",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
-          
-      },
-      {
-          "id": "8",
-          "type": "Film",
-          "title": "The Dark Knight Rises",
-          "director": "Christopher Nolan",
-          "year": "2012",
-          "rating":"",
-          "actors": "Christian Bale",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "9",
-          "type": "Film",
-          "title": "Batman v Superman: Dawn of Justice",
-          "director": "Zack Snyder",
-          "year": "2016",
-          "rating":"",
-          "actors": "",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "10",
-          "type": "Film",
-          "title": "The Lego Batman Movie",
-          "director": "Chris McKay",
-          "year": "2017",
-          "rating":"",
-          "actors": "",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
-      },
-      {
-          "id": "11",
-          "type": "Film",
-          "title": "The Batman",
-          "director": "Matt Reeves",
-          "year": "2022",
-          "rating":"",
-          "actors": "",
-          "reviews": "",
-          "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
-      }
+    {
+      "id": "1",
+      "type": "Film",
+      "title": "Batman: The Movie",
+      "director": "Leslie H. Martinson",
+      "year": "1966",
+      "rating": "",
+      "actors": "Burt Ward",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMmM1OGIzM2UtNThhZS00ZGNlLWI4NzEtZjlhOTNhNmYxZGQ0XkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_.jpg"
+    },
+    {
+      "id": "2",
+      "type": "Film",
+      "title": "Batman",
+      "director": "Tim Burton",
+      "year": "1989",
+      "rating": "pg-13",
+      "actors": "Michael Keaton",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BZjEzYzFkMDgtNzI5ZS00ZDg0LTkwZjgtNGJhODI1MWM1MzZjXkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg"
+    },
+    {
+      "id": "3",
+      "type": "Film",
+      "title": "Batman Returns",
+      "director": "Tim Burton",
+      "year": "1992",
+      "rating": "",
+      "actors": "Michael Keaton",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BOGZmYzVkMmItM2NiOS00MDI3LWI4ZWQtMTg0YWZkODRkMmViXkEyXkFqcGdeQXVyODY0NzcxNw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "4",
+      "type": "Film",
+      "title": "Batman Forever",
+      "director": "Joel Schumacher",
+      "year": "1995",
+      "rating": "",
+      "actors": "Val Kilmer",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BNDdjYmFiYWEtYzBhZS00YTZkLWFlODgtY2I5MDE0NzZmMDljXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "5",
+      "type": "Film",
+      "title": "Batman and Robin",
+      "director": "Joel Schumacher",
+      "year": "1997",
+      "rating": "",
+      "actors": "George Clooney",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMGQ5YTM1NmMtYmIxYy00N2VmLWJhZTYtN2EwYTY3MWFhOTczXkEyXkFqcGdeQXVyNTA2NTI0MTY@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "6",
+      "type": "Film",
+      "title": "Batman Begins",
+      "director": "Christopher Nolan",
+      "year": "2005",
+      "rating": "",
+      "actors": "Christian Bale",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "7",
+      "type": "Film",
+      "title": "The Dark Knight",
+      "director": "Christopher Nolan",
+      "year": "2008",
+      "rating": "",
+      "actors": "Christian Bale",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "8",
+      "type": "Film",
+      "title": "The Dark Knight Rises",
+      "director": "Christopher Nolan",
+      "year": "2012",
+      "rating": "",
+      "actors": "Christian Bale",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "9",
+      "type": "Film",
+      "title": "Batman v Superman: Dawn of Justice",
+      "director": "Zack Snyder",
+      "year": "2016",
+      "rating": "",
+      "actors": "",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "10",
+      "type": "Film",
+      "title": "The Lego Batman Movie",
+      "director": "Chris McKay",
+      "year": "2017",
+      "rating": "",
+      "actors": "",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": "11",
+      "type": "Film",
+      "title": "The Batman",
+      "director": "Matt Reeves",
+      "year": "2022",
+      "rating": "",
+      "actors": "",
+      "reviews": "",
+      "image": "https://m.media-amazon.com/images/M/MV5BMTQ2MjQ2MjQwN15BMl5BanBnXkFtZTgwNjQ5NjQxMjE@._V1_FMjpg_UX1000_.jpg"
+    }
   ]
 }
