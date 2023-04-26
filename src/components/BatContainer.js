@@ -1,9 +1,9 @@
 import React from "react";
 import BatCard from "./BatCard";
 
-function BatContainer({ movies }) {
+function BatContainer({ searchedMoviesData }) {
   // Render a list of ContainerCard components for each movie in the movies array
-    const moviesList = movies.map((movie) => (
+    const moviesList = searchedMoviesData.map((movie) => (
         <BatCard key={movie.id} movie={movie} />
     ));
 

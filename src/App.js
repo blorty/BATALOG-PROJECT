@@ -6,14 +6,30 @@ import './App.css';
 
 function App() {
   //set state for movies
-  const [movies, setMovies] = useState([]);
+  const [moviesData, setMoviesData] = useState([]);
+
+  const [searchBy, setSearchBy] = useState("title");
+
+  const [input, setInput] = useState("");
+
+  const searchedMoviesData = moviesData.filter((moviesItem) => {
+    const searchTerm = input.toLowerCase();
+    const searchProperty = searchBy.toLowerCase();
+
+    if (moviesItem.hasOwnProperty(searchProperty)) {
+      const itemValue = moviesItem[searchProperty].toLowerCase();
+      return itemValue.includes(searchTerm);
+    }
+    return false;
+});
+  
 
   //fetch movies from API
   useEffect(() => {
     fetch("http://localhost:3000/movies")
     .then((r) => r.json())
     .then((moviesData) => {
-      setMovies(moviesData);
+      setMoviesData(moviesData);
     });
   }, []);
 
@@ -23,15 +39,15 @@ function App() {
       style={{ minHeight: "100vh" }}
     >
       <header className="App-header">
-        <h1 class="text-yellow-500 pt-3.5 pb-3.5 text-9xl"
+        <h1 className="text-yellow-500 pt-3.5 pb-3.5 text-9xl"
             style={{
             textShadow:'-1px -1px 0 #1f2937, 1px -1px 0 #1f2937, -1px 1px 0 #1f2937, 1px 1px 0 #1f2937',
           }}
         >THE BATALOG
         </h1>
-          <Search />
+          <Search searchBy={searchBy} setSearchBy={setSearchBy} input={input} setInput={setInput} />
           <BatForm />
-          <BatContainer movies={movies}/>
+          <BatContainer searchedMoviesData={searchedMoviesData} />
       </header>
     </div>
   );

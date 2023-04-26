@@ -14,7 +14,7 @@ function BatCard({ movie }) {
     const handleMovieClick = () => {
         setShowDetails(!showDetails);
     };
-
+    
     return (
         <div className="w-full md:w-1/3 px-2 mb-4" onClick={handleMovieClick}>
         <div className="flex justify-center">
