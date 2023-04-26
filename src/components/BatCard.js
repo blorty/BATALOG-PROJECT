@@ -16,13 +16,14 @@ function BatCard({ movie }) {
     };
 
     return (
-        <div className="w-full md:w-1/3 px-2 mb-4" onClick={handleMovieClick}>
+        <div className="w-full md:w-1/3 px-2 mb-4">
         <div className="flex justify-center">
             <div className="container-card w-full p-4">
             <img
                 className="w-full h-auto mb-4 hover:shadow-lg hover:translate-y-1 hover:filter-glow transition duration-300 ease-in-out"
                 src={movie.image}
                 alt={movie.title}
+                onClick={handleMovieClick} // Move the onClick event to the image tag
             />
             <h3 className="text-1xl font-semibold mb-2 relative text-black">
                 {movie.title.toUpperCase()}
