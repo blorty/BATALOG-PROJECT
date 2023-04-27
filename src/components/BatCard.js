@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function BatCard({ movie }) {
+function BatCard({ movie, handleDeleteMovie }) {
   // Set state for movies seen and show details
     const [moviesSeen, setMoviesSeen] = useState(false);
     const [showDetails, setShowDetails] = useState(false);
@@ -19,6 +19,7 @@ function BatCard({ movie }) {
         <div className="w-full md:w-1/3 px-2 mb-4">
         <div className="flex justify-center">
             <div className="container-card w-full p-4">
+            {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
             <img
                 className="w-full h-auto mb-4 hover:shadow-lg hover:translate-y-1 hover:filter-glow transition duration-300 ease-in-out"
                 src={movie.image}
@@ -38,6 +39,12 @@ function BatCard({ movie }) {
                 <p className="text-white">Rating: {movie.rating}</p>
                 <p className="text-white">Year: {movie.year}</p>
                 <p className="text-white">Director: {movie.director}</p>
+                <button
+                    className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                    onClick={() => handleDeleteMovie(movie.id)}
+                >
+                    Delete
+                </button>
                 </div>
             )}
             </div>

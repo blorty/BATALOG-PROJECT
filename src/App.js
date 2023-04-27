@@ -14,28 +14,34 @@ function App() {
   //set state for input
   const [input, setInput] = useState("");
 
-  //filter movies based on search
-  const searchedMoviesData = moviesData.filter((moviesItem) => {
-    const searchTerm = input.toLowerCase();
-    const searchProperty = searchBy.toLowerCase();
-
-    //if the movie has the search property, return the movie
-    if (moviesItem.hasOwnProperty(searchProperty)) {
-      const itemValue = moviesItem[searchProperty].toLowerCase();
-      return itemValue.includes(searchTerm);
-    }
-    return false;
-});
-  
-
   //fetch movies from API
   useEffect(() => {
     fetch("http://localhost:3000/movies")
     .then((r) => r.json())
     .then((moviesData) => {
-      setMoviesData(moviesData);
+    setMoviesData(moviesData);
     });
   }, []);
+
+  //filter movies based on search
+  const searchedMoviesData = moviesData.filter((moviesItem) => {
+    const searchTerm = input.toLowerCase();
+    const searchProperty = searchBy.toLowerCase();
+
+  //if the movie has the search property, return the movie
+  if (moviesItem.hasOwnProperty(searchProperty)) {
+    const itemValue = moviesItem[searchProperty].toLowerCase();
+    return itemValue.includes(searchTerm);
+    }
+    return false;
+  });
+
+  //handleDeleteMovie
+  const handleDeleteMovie = (id) => {
+    const updatedMoviesData = moviesData.filter((movie) => movie.id !== id);
+    setMoviesData(updatedMoviesData);
+    console.log(updatedMoviesData);
+  };
 
   return (
     <div 
@@ -51,7 +57,7 @@ function App() {
         </h1>
           <Search searchBy={searchBy} setSearchBy={setSearchBy} input={input} setInput={setInput} />
           <BatForm />
-          <BatContainer searchedMoviesData={searchedMoviesData} />
+          <BatContainer searchedMoviesData={searchedMoviesData} handleDeleteMovie={handleDeleteMovie}/>
       </header>
     </div>
   );
