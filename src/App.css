@@ -1,3 +1,20 @@
+:root {
+  --gradient-start-color: #061121;
+  --gradient-middle-color: #fef08a;
+  --gradient-end-color: #061121;
+}
+
+body {
+  background: linear-gradient(45deg, var(--gradient-start-color), var(--gradient-middle-color) 5%, var(--gradient-end-color));
+  background-size: 700% 350%; /* set the background size */
+}
+
+nav {
+  background: linear-gradient(45deg, var(--gradient-start-color), var(--gradient-middle-color) 5%, var(--gradient-end-color));
+  animation: moveGradient 22s linear infinite;
+  background-size: 700% 350%; /* set the background size */
+}
+
 .App {
   font-family: 'Paytone One', sans-serif;
   letter-spacing: 2px;
@@ -27,6 +44,7 @@
   100% {
     background-position: 0% 50%;
   }
+  animation-duration: 10s;
 }
 
 .animate-moveGradient {
@@ -35,8 +53,5 @@
   /* Set the animation properties */
   animation: moveGradient 7s linear infinite;
   /* Specify the background size to control the thickness of the colors */
-  background-size: 400% 100%;
+  background-size: 700% 350%;
 }
-
-
-
