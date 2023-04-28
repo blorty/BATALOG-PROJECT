@@ -1,31 +1,33 @@
 {
   "movies": [
-{
+    {
       "id": "1",
       "type": "Film",
       "title": "Batman: The Movie",
       "director": "Leslie H. Martinson",
       "year": "1966",
-      "rating":"6.5/10",
+      "rating": "6.5/10",
       "star": "Burt Ward",
       "reviews": "",
       "about": "The arch-villains of the United Underworld - the Joker, the Penguin, the Riddler and the Catwoman - combine forces to dispose of Batman and Robin as they launch their fantastic plot to control the entire world. From his submarine, Penguin and his cohorts hijack a yacht containing a dehydrator, which can extract all moisture from humans and reduce them to particles of dust. The evildoers turn the nine Security Council members in the United World Building into nine vials of multicolored crystals! Batman and Robin track the villains in their Batboat and use Batcharge missiles to force the submarine to surface.",
       "cast": "Adam West, Burt Ward, Lee Meriwether, Cesar Romero, Burgess Meredith, Frank Gorshin",
-      "image": "https://m.media-amazon.com/images/M/MV5BMmM1OGIzM2UtNThhZS00ZGNlLWI4NzEtZjlhOTNhNmYxZGQ0XkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_.jpg"
-      },
-      {
+      "image": "https://m.media-amazon.com/images/M/MV5BMmM1OGIzM2UtNThhZS00ZGNlLWI4NzEtZjlhOTNhNmYxZGQ0XkEyXkFqcGdeQXVyNTkxMzEwMzU@._V1_.jpg",
+      "added": "true",
+      "favorited": "true"
+    },
+    {
       "id": "2",
       "type": "Film",
       "title": "Batman",
       "director": "Tim Burton",
       "year": "1989",
-      "rating":"7.5/10",
+      "rating": "7.5/10",
       "star": "Michael Keaton",
       "reviews": "",
       "about": "Gotham City. Crime boss Carl Grissom (Jack Palance) effectively runs the town but there's a new crime fighter in town - Batman (Michael Keaton). Grissom's right-hand man is Jack Napier (Jack Nicholson), a brutal man who is not entirely sane... After falling out between the two Grissom has Napier set up with the Police and Napier falls to his apparent death in a vat of chemicals. However, he soon reappears as The Joker and starts a reign of terror in Gotham City. Meanwhile, reporter Vicki Vale (Kim Basinger) is in the city to do an article on Batman. She soon starts a relationship with Batman's everyday persona, billionaire Bruce Wayne.",
       "cast": "Jack Nicholson, Michael Keaton, Kim Basinger, Robert Wuhl, Pat Hingle, Billy Dee Williams, Michael Gough, Jack Palance",
       "image": "https://m.media-amazon.com/images/M/MV5BZDNjOGNhN2UtNmNhMC00YjU4LWEzMmUtNzRkM2RjN2RiMjc5XkEyXkFqcGdeQXVyMTU0OTM5ODc1._V1_.jpg"
-      },
+    },
     {
       "id": "3",
       "title": "Batman Returns",
