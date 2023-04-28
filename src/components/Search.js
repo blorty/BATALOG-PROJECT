@@ -1,14 +1,18 @@
 import React from "react";
 
 function Search({ input, setInput, searchBy, setSearchBy }) {
+
+    //handle change function
     const handleChange = (e) => {
         setInput(e.target.value);
     };
 
-    const handleSelectChange = (e) => {
+    //handle filter change function
+    const handleFilterChange = (e) => {
         setSearchBy(e.target.value);
     };
 
+    //handle enter key function
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
         setInput("");
@@ -33,7 +37,7 @@ function Search({ input, setInput, searchBy, setSearchBy }) {
             />
             <select
             value={searchBy}
-            onChange={handleSelectChange}
+            onChange={handleFilterChange}
             className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 appearance-none leading-normal"
             >
             <option value="title">Title</option>

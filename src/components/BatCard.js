@@ -4,10 +4,12 @@ function BatCard({ movie, handleDeleteMovie }) {
     const [showDetails, setShowDetails] = useState(false);
     const [moviesSeen, setMoviesSeen] = useState(false);
 
+    //handle movie click function
     const handleMovieClick = () => {
         setShowDetails(!showDetails);
     };
 
+    //handle delete movie function
     const handleMoviesSeen = () => {
         setMoviesSeen(!moviesSeen);
     };
@@ -42,10 +44,10 @@ function BatCard({ movie, handleDeleteMovie }) {
             </a>
             {showDetails && (
             <div>
-                <p className="text-white">Director: {movie.director}</p>
                 <p className="text-white">Star: {movie.star}</p>
-                <p className="text-white">Year of Release: {movie.year}</p>
-                <p className="text-white">Rating: {movie.rating} ⭐</p>
+                <p className="text-white">Rating: {movie.rating}</p>
+                <p className="text-white">Year: {movie.year}</p>
+                <p className="text-white">Director: {movie.director}</p>
                 <button
                 className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
                 onClick={() => handleDeleteMovie(movie.id)}

@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-function BatForm( {handleAddNewMovie} ) {
+function BatForm() {
 
     //set initial state for form
     const initialData = {
@@ -12,8 +12,11 @@ function BatForm( {handleAddNewMovie} ) {
         star: "",
     }
 
-    //set state for movies data
+    //set state for movies
     const [moviesData, setMoviesData] = useState(initialData)
+
+    //set state for movies
+    const [movies, setMovies] = useState([])
 
     //handle create new movie form
     const handleCreateMovie = (e) => {
@@ -27,8 +30,7 @@ function BatForm( {handleAddNewMovie} ) {
         })
         .then((r) => r.json())
         .then((newMovie) => {
-            //invoke handleAddNewMovie function with newMovie as argument
-            handleAddNewMovie(newMovie);
+            setMovies([...movies, newMovie])
             setMoviesData(initialData)
         });
     };
@@ -45,7 +47,6 @@ function BatForm( {handleAddNewMovie} ) {
         type="text"
         name="title"
         placeholder="Title"
-        value={moviesData.title}
         onChange={handleChange}
         className="flex-grow w-full sm:w-1/2 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 mr-2"
     />
@@ -53,7 +54,6 @@ function BatForm( {handleAddNewMovie} ) {
         type="text"
         name="image"
         placeholder="Image URL"
-        value={moviesData.image}
         onChange={handleChange}
         className="flex-grow w-full sm:w-1/2 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 ml-2"
     />

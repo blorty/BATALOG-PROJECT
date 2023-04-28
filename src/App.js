@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -8,12 +8,11 @@ import MovieDetail from "./components/MovieDetail";
 import './App.css';
 
 function App() {
-    const [ page, setPage ] = useState("/");
 
   return (
     <div className="min-h-screen bg-gray-900">
       <BrowserRouter>
-    <NavBar onChangePage={setPage} />
+    <NavBar />
     <Switch>
         <Route path="/about">
             <About />
@@ -30,10 +29,10 @@ function App() {
         <Route path="*">
             <h1>404 not found</h1>
         </Route>
-    </Switch>
-    </BrowserRouter>
-</div>
+      </Switch>
+      </BrowserRouter>
+    </div>
   )
-
 }
+
 export default App;
