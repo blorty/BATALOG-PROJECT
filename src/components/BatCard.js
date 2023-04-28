@@ -15,6 +15,7 @@ function BatCard({ movie, handleDeleteMovie }) {
     return (
         <div className="w-full px-2 mb-4">
         <div className="flex justify-center flex-col items-center">
+            {/* rome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
             <img
             className="w-full h-auto mb-4 hover:shadow-lg hover:translate-y-1 hover:filter-glow transition duration-300 ease-in-out"
             src={movie.image}

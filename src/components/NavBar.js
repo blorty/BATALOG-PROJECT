@@ -1,18 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import BatGif from "../assets/batlogogif.gif"
 
-function NavBar() {
+function NavItem({ to, label, onChangePage }) {
     return (
-        <nav className="flex items-center justify-between flex-wrap bg-gradient-to-r from-teal-500 via-blue-500 to-purple-500 animate-moveGradient p-6 mx-auto">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-            <img src={BatGif} alt="bat" className="w-full h-12" />
-        </div>
-        <div className="block lg:hidden">
+        <NavLink
+        exact
+        to={to}
+        className="block mt-4 lg:inline-block lg:mt-0 text-xl text-yellow-700 hover:text-white mx-4"
+        activeClassName="font-bold"
+        >
+        {label}
+        </NavLink>
+    );
+    }
+
+    function NavBar() {
+    return (
+        <nav className="py-4 flex justify-center">
+        <div className="flex justify-center">
             <button
-            className="flex items-center px-3 py-2 border rounded text-orange-600 border-teal-400 hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 border rounded text-orange-600 white-400 hover:text-white hover:border-white"
             onClick={() => {
-                // toggle navbar menu
+                // toggle navbar menu open/closed
             }}
             >
             <svg
@@ -26,34 +35,14 @@ function NavBar() {
             </button>
         </div>
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow justify-center">
-            <NavLink
-                exact
-                to="/"
-                className="block mt-4 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white mr-4"
-                activeClassName="font-bold"
-            >
-                Home
-            </NavLink>
-            <NavLink
-                to="/about"
-                className="block mt-4 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white mr-4"
-                activeClassName="font-bold"
-            >
-                About
-            </NavLink>
-            <NavLink
-                to="/history"
-                className="block mt-4 lg:inline-block lg:mt-0 text-xl text-teal-200 hover:text-white"
-                activeClassName="font-bold"
-            >
-                History
-            </NavLink>
+            <div className="text-sm lg:flex-grow justify-center">
+            <NavItem to="/" label="Home" />
+            <NavItem to="/about" label="About" />
+            <NavItem to="/history" label="History" />
             </div>
         </div>
         </nav>
     );
-}
-
+    }
 
 export default NavBar;
