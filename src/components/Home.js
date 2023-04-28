@@ -26,7 +26,6 @@ function Home() {
         }
         return false;
     });
-    
 
     //fetch movies from API
     useEffect(() => {
@@ -36,6 +35,12 @@ function Home() {
         setMoviesData(moviesData);
         });
     }, []);
+
+    //handle addNewMovie function
+    const handleAddNewMovie = (newMovie) => {
+        const updatedMoviesData = [...moviesData, newMovie];
+        setMoviesData(updatedMoviesData);
+    };
 
     //handleDeleteMovie function
     const handleDeleteMovie = (id) => {
@@ -57,7 +62,7 @@ function Home() {
             >THE BATALOG
             </h1>
             <Search searchBy={searchBy} setSearchBy={setSearchBy} input={input} setInput={setInput} />
-            <BatForm />
+            <BatForm handleAddNewMovie={handleAddNewMovie}/>
             <BatContainer searchedMoviesData={searchedMoviesData} handleDeleteMovie={handleDeleteMovie}/>
         </header>
         </div>
